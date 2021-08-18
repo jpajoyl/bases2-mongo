@@ -13,8 +13,7 @@ public class MongoDb {
         String URL = "mongodb://localhost:27017/bd2";
         MongoClient client = MongoClients.create(URL);
         MongoDatabase db = client.getDatabase("bd2");
-        MongoCollection<Document> coll = db.getCollection("estadisticas");
-        return coll;
+        return db.getCollection("departamentos");
     }
 
     public static void main(String[] args) {

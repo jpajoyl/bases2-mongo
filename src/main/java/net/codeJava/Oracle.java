@@ -3,6 +3,20 @@ package net.codeJava;
 import java.sql.*;
 
 public class Oracle {
+
+    public static ResultSet consulta(String sql) throws ClassNotFoundException, SQLException {
+        Connection conn;
+        Statement sentencia;
+        ResultSet resultado;
+        //System.out.println("Conexión a la base de datos");
+        Class.forName("oracle.jdbc.driver.OracleDriver");
+        conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "juanma");
+        sentencia = conn.createStatement();
+        resultado = sentencia.executeQuery(sql);
+        // conn.close();
+        return resultado;
+    }
+
     public static void main(String[] args) {
         Connection conn;
         Statement sentencia;
