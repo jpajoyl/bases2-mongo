@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.mongooracle.MenuPrincipalController">
+   <children>
+      <Text layoutX="161.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estadisticos" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="generar_button" layoutX="98.0" layoutY="159.0" mnemonicParsing="false" onAction="#generarEstadisticos" prefHeight="37.0" prefWidth="223.0" text="Generar Estadisticos" />
+      <Button fx:id="visualizar_button" layoutX="98.0" layoutY="233.0" mnemonicParsing="false" onAction="#routeEstadisticas" prefHeight="37.0" prefWidth="223.0" text="Visualizar Estadisticos" />
+      <Button fx:id="vaciar_button" layoutX="98.0" layoutY="310.0" mnemonicParsing="false" onAction="#vaciarArreglos" prefHeight="37.0" prefWidth="223.0" text="Vaciar Arreglos" />
+      <Text layoutX="63.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Principal">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="close_button" layoutX="462.0" layoutY="370.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="38.0" prefWidth="145.0" text="Salir" />
+   </children>
+</AnchorPane>
